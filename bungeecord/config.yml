@@ -1,0 +1,49 @@
+server_connect_timeout: 5000
+enforce_secure_profile: false
+remote_ping_cache: -1
+forge_support: false
+player_limit: -1
+permissions:
+  default:
+  admin:
+timeout: 30000
+log_commands: false
+network_compression_threshold: 256
+online_mode: true
+disabled_commands:
+- disabledcommandhere
+servers:
+  surv:
+    motd: '&'
+    address: 212.76.129.213:25565
+    restricted: false
+  aternos:
+    motd: '&'
+    address: txonikla.aternos.me:40684
+    restricted: false
+listeners:
+- query_port: 25577
+  motd: '&'
+  tab_list: GLOBAL_PING
+  query_enabled: false
+  proxy_protocol: false
+  forced_hosts:
+    pvp.md-5.net: pvp
+  ping_passthrough: false
+  priorities:
+  - surv
+  - aternos
+  bind_local_address: true
+  host: 0.0.0.0:25577
+  max_players: 1
+  tab_size: 60
+  force_default_server: true
+ip_forward: false
+remote_ping_timeout: 5000
+prevent_proxy_connections: false
+groups:
+  md_5:
+connection_throttle: 4000
+stats: bee96bfd-bf0f-4619-9f74-635289bd8a0e
+connection_throttle_limit: 3
+log_pings: true
